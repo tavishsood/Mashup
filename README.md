@@ -1,15 +1,15 @@
 ## 📋 Overview
 This repository serves as the central hub for the **Mashup Generator** project. It is divided into two distinct implementations:
 
-1.  **Program 1:** A standalone Command Line Interface (CLI) tool.
-2.  **Program 2:** A full-stack Web Application with email delivery.
+1.  **Program 1:** A full-stack Web Application with email delivery.
+2.  **Program 2:** A standalone Command Line Interface (CLI) tool.
 
 ## 🔗 Project Deliverables
 
 | Component | Repository Link | Description |
 | :--- | :--- | :--- |
-| **CLI Tool** | [**View Program 1 Code**](LINK_TO_CLI_REPO) | Python script (`<RollNumber>.py`) implementing the mashup logic locally. |
 | **Web App** | [**View Program 2 Code**](LINK_TO_WEBAPP_REPO) | Next.js & Flask application hosted on Vercel. |
+| **CLI Tool** | [**View Program 1 Code**](LINK_TO_CLI_REPO) | Python script (`102303246.py`) implementing the mashup logic locally. |
 
 ---
 

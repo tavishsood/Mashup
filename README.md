@@ -8,8 +8,8 @@ This repository serves as the central hub for the **Mashup Generator** project. 
 
 | Component | Repository Link | Description |
 | :--- | :--- | :--- |
-| **Web App** | [**View Program 2 Code**](LINK_TO_WEBAPP_REPO) | Next.js & Flask application hosted on Vercel. |
-| **CLI Tool** | [**View Program 1 Code**](LINK_TO_CLI_REPO) | Python script (`102303246.py`) implementing the mashup logic locally. |
+| **Web App** | [**View Program 1 Code**](LINK_TO_WEBAPP_REPO) | Next.js & Flask application hosted on Vercel. |
+| **CLI Tool** | [**View Program 2 Code**](LINK_TO_CLI_REPO) | Python script (`102303246.py`) implementing the mashup logic locally. |
 
 ---
 

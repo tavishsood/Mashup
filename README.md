@@ -1,38 +1,30 @@
-# 🎵 Mashup Generator Assignment Submission
-**Name:** [Your Name]
-**Roll Number:** [Your Roll Number]
-**Group:** [Your Group]
+## 📋 Overview
+This repository serves as the central hub for the **Mashup Generator** project. It is divided into two distinct implementations:
 
-## 📋 Project Overview
-This repository serves as the submission hub for the Mashup Assignment. [cite_start]The project addresses the requirement to develop two distinct implementations for generating audio mashups: a Command Line Interface (Program 1) and a Web Service (Program 2)[cite: 6].
+1.  **Program 1:** A standalone Command Line Interface (CLI) tool.
+2.  **Program 2:** A full-stack Web Application with email delivery.
 
-## 📂 Deliverables
+## 🔗 Project Deliverables
 
-### 1. [Program 1: CLI Implementation (Link)](LINK_TO_YOUR_CLI_REPO)
-* [cite_start]**File:** `102103123.py` (Adheres to naming convention [cite: 15])
-* **Features:** Command-line argument validation, local file generation.
-
-### 2. [Program 2: Web Service (Link)](LINK_TO_YOUR_WEBAPP_REPO)
-* **Live Link:** [https://mashup-x1jv.vercel.app/](https://mashup-x1jv.vercel.app/)
-* [cite_start]**Features:** Email delivery, ZIP file format[cite: 39].
+| Component | Repository Link | Description |
+| :--- | :--- | :--- |
+| **CLI Tool** | [**View Program 1 Code**](LINK_TO_CLI_REPO) | Python script (`<RollNumber>.py`) implementing the mashup logic locally. |
+| **Web App** | [**View Program 2 Code**](LINK_TO_WEBAPP_REPO) | Next.js & Flask application hosted on Vercel. |
 
 ---
 
-## 🧪 Result & Validation Table
-[cite_start]The following test cases demonstrate compliance with the assignment constraints (N > 10, Y > 20)[cite: 18, 21].
+## ✅ Compliance Checklist
+The following constraints from the assignment problem statement have been strictly implemented:
 
-| Test Case | Inputs | Expected Outcome | Actual Result |
-| :--- | :--- | :--- | :--- |
-| **Standard Run** | `("Sharry Maan", 20, 30)` | **Success:** ~10 min audio file created. | ✅ Pass |
-| **Invalid Videos** | `("Artist", 5, 30)` | **Error:** "Number of videos must be > 10" | ✅ Pass |
-| **Invalid Duration** | `("Artist", 20, 10)` | **Error:** "Duration must be > 20" | ✅ Pass |
-| **Web Delivery** | `(Valid Inputs + Email)` | **Success:** ZIP file received in inbox. | ✅ Pass |
+* **Constraint 1:** The CLI program accepts inputs strictly as command-line arguments. 
+* **Constraint 2:** The number of videos ($N$) must be greater than 10. 
+* **Constraint 3:** The trim duration ($Y$) must be greater than 20 seconds. 
+* **Constraint 4:** The Web App delivers the final result as a **ZIP file** via email.
 
-## 🔄 Project Flowchart
-
-
-## 📄 Assignment Constraints Checklist
-- [x] [cite_start]Program 1 file named `<RollNumber>.py` [cite: 15]
-- [x] [cite_start]CLI checks for correct number of parameters [cite: 26]
-- [x] [cite_start]Web App sends result in ZIP format [cite: 39]
-- [x] [cite_start]Cuts first Y seconds from downloaded files [cite: 21]
+## 🧪 Methodology
+Both implementations share a core processing pipeline:
+1.  **Scrape:** Extract video URLs for the requested artist using `yt-dlp`.
+2.  **Download:** Fetch audio streams directly (avoiding video overhead).
+3.  **Process:** Use `FFmpeg` to trim the **first Y seconds** of each track.
+4.  **Merge:** Concatenate the clips into a single continuous audio file.
+5.  **Deliver:** Save to disk (CLI) or Zip & Email (Web App).

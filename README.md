@@ -1,10 +1,10 @@
-## 📋 Overview
+## Overview
 This repository serves as the central hub for the **Mashup Generator** project. It is divided into two distinct implementations:
 
 1.  **Program 1:** A full-stack Web Application with email delivery.
 2.  **Program 2:** A standalone Command Line Interface (CLI) tool.
 
-## 🔗 Project Deliverables
+## Project Deliverables
 
 | Component | Repository Link | Description |
 | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This repository serves as the central hub for the **Mashup Generator** project. 
 
 ---
 
-## ✅ Compliance Checklist
+## Compliance Checklist
 The following constraints from the assignment problem statement have been strictly implemented:
 
 * **Constraint 1:** The CLI program accepts inputs strictly as command-line arguments. 
@@ -21,7 +21,7 @@ The following constraints from the assignment problem statement have been strict
 * **Constraint 3:** The trim duration ($Y$) must be greater than 20 seconds. 
 * **Constraint 4:** The Web App delivers the final result as a **ZIP file** via email.
 
-## 🧪 Methodology
+## Methodology
 Both implementations share a core processing pipeline:
 1.  **Scrape:** Extract video URLs for the requested artist using `yt-dlp`.
 2.  **Download:** Fetch audio streams directly (avoiding video overhead).
